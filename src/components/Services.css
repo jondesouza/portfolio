@@ -1,0 +1,87 @@
+.services {
+    width: 100%;
+    padding: 65px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    background-color: var(--main);
+}
+
+.my-skills {
+    width: 100%;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dev,
+.design {
+    background-image: linear-gradient(to bottom right, var(--highlight), var(--details));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    border-radius: 10px;
+    gap: 20px;
+    color: white;
+    text-align: center;
+    max-height: 250px;
+    max-width: 450px;
+    width: 100%;
+    font-family: 'Barlow', sans-serif;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+}
+
+.tech {
+    background-color: var(--highlight);
+    color: var(--details);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font: 700 0.8rem 'Barlow', sans-serif;
+    text-transform: uppercase;
+    width: max-content;
+    display: inline-block;
+    margin: 3px;
+}
+
+.design .tech {
+    background-color: var(--details);
+    color: var(--highlight);
+    margin: 0;
+    padding: 3px 6px;
+}
+
+.service-title {
+    text-transform: uppercase;
+}
+
+.tech-icon {
+    margin: 7px;
+    height: 2em;
+}
+
+.tech-icon:hover {
+    color: var(--highlight);
+}
+
+@media (min-width: 755px) {
+    .my-skills {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .dev,
+    .design {
+        width: 50%;
+        min-height: 250px;
+    }
+
+    .figma-icon {
+        height: 2em;
+    }
+}

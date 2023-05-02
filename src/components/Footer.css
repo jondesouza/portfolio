@@ -1,0 +1,43 @@
+.contact {
+    background-color: white;
+    padding: 50px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font: 700 0.72rem 'Barlow', sans-serif;
+    color: var(--details);
+    text-transform: uppercase;
+    gap: 25px;
+}
+
+.contact img {
+    width: 45%;
+    max-width: 105px;
+}
+
+.contact .links {
+    padding: 9px 18px;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom right, var(--highlight), var(--details));
+}
+
+.contact .links a {
+    color: white;
+}
+
+.icon-contact {
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.mail {
+    font-size: 1.4rem;
+}
+
+@media (min-width: 650px) {
+    .contact {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

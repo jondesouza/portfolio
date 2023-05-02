@@ -1,0 +1,156 @@
+.projects {
+    width: 100%;
+    padding: 65px 5%;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--lead);
+}
+
+.project {
+    width: 100%;
+    background-color: var(--night);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-title {
+    text-transform: uppercase;
+    font: 700 1.4rem 'Barlow', sans-serif;
+    color: var(--details);
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 7px;
+    margin: 15px 0 0;
+    max-width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+}
+
+.section-title img {
+    max-width: 20px;
+}
+
+.project-image {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: var(--main) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.project-image img {
+    max-width: 95%;
+    max-height: 90%;
+}
+
+.project .buttons-box {
+    width: 100%;
+    height: 250px;
+    padding: 15px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom right, var(--highlight), var(--details));
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+}
+
+.projects button,
+.projects input[type="button"] {
+    cursor: pointer;
+}
+
+.projects a {
+    text-decoration: none;
+    color: var(--details);
+}
+
+input[type="button"],
+button {
+    border: none;
+}
+
+.arrow-icon {
+    margin-left: 8px;
+    font-size: 14px;
+}
+
+.projects .navigation,
+.projects .navigate {
+    min-width: 98%;
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+}
+
+.projects .navigate:active {
+    margin-top: 6px;
+}
+
+.projects .qualities {
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+
+.projects .qualities input[type=button] {
+    width: 48%;
+}
+
+.content-port {
+    background-color: white;
+    color: var(--details);
+    border-radius: 7px;
+    font: 400 1rem 'Barlow', sans-serif;
+    padding: 20px;
+    height: max-content;
+    width: 98%;
+    margin-bottom: 25px;
+}
+
+@media (min-width: 755px) {
+    .project {
+        flex-direction: row;
+        gap: 25px;
+    }
+
+    .project .buttons-box,
+    .project-image {
+        width: 49%;
+    }
+}
+
+@media (min-width: 950px) {
+    .project-image,
+    .project .buttons-box {
+        height: 300px;
+    }
+
+    .content-port {
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1150px) {
+    .project-image,
+    .project .buttons-box {
+        height: 350px;
+    }
+}

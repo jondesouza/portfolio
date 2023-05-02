@@ -1,0 +1,238 @@
+.home {
+    padding: 65px 5%;
+    width: 100%;
+    max-width: 100%;
+    height: max-content;
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    background-image:
+        linear-gradient(to bottom right,
+            var(--highlight),
+            var(--details));
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+    color: var(--main);
+}
+
+.my-photo {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    overflow: visible;
+}
+
+.photo {
+    width: 75vw;
+    height: 75vw;
+    border-radius: 100%;
+    max-width: 250px;
+    max-height: 250px;
+}
+
+.greeting,
+.objective {
+    font: 200 0.96rem 'Barlow', sans-serif;
+    max-width: 90%;
+    line-height: 1.5;
+}
+
+.objective {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font: 900 2rem 'Barlow', sans-serif;
+    color: var(--details);
+    text-transform: uppercase;
+    display: block;
+    padding: 6px 8px;
+    margin: 10px 0;
+    background-color: var(--lead);
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.exclamation {
+    color: white;
+}
+
+.qualities {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.check {
+    background-color: var(--highlight);
+    box-shadow: 0px 3px 0 var(--details);
+    color: var(--details);
+    font-style: normal;
+    font: 700 0.85rem 'Barlow', sans-serif;
+    padding: 7.5px 15px;
+    border-radius: 4px;
+    margin: 3px;
+    min-width: 150px;
+    width: max-content;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.check:active {
+    margin-top: 6px;
+}
+
+.buttons-box {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.navigation {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigate {
+    width: 305px;
+    display: flex;
+    justify-content: center;
+}
+
+.arrow-down {
+    width: 10%;
+}
+
+.desktop-buttons {
+    display: none;
+}
+
+.desktop-greeting {
+    display: none;
+}
+
+@media (min-width: 910px) {
+    .home {
+        flex-direction: row-reverse;
+    }
+
+    .greeting,
+    .objective {
+        font-size: 1.06rem;
+    }
+
+    .name {
+        width: 100%;
+        text-align: center;
+        font-size: 2.3rem;
+    }
+
+    .button-box {
+        width: 90%;
+    }
+
+    .check {
+        min-width: 170px;
+    }
+
+    .intro,
+    .my-photo {
+        width: 50%;
+        overflow: visible;
+    }
+
+    .intro {
+        display: flex;
+        gap: 15px;
+    }
+
+    .photo {
+        max-width: 400px;
+        max-height: 400px;
+    }
+
+    .mobile-buttons {
+        display: none;
+    }
+
+    .desktop-buttons {
+        display: flex;
+        justify-content: center;
+        height: max-content;
+    }
+
+    .desktop-buttons .arrow-down {
+        width: 15%;
+    }
+
+    .desktop-buttons .qualities {
+        max-width: 90%;
+        height: auto;
+        min-height: max-content;
+    }
+
+    .mobile-greeting {
+        display: none;
+    }
+
+    .desktop-greeting {
+        display: inline;
+    }
+}
+
+@media (min-width: 1000px) {
+    .name {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 1100px) {
+    .name {
+        font-size: 2.7rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .name {
+        font-size: 2.9rem;
+    }
+}
+
+@media (min-width: 1300px) {
+    .name {
+        font-size: 3.1rem;
+    }
+
+    .desktop-buttons .qualities {
+        max-width: 80%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .name {
+        font-size: 3.3rem;
+    }
+}

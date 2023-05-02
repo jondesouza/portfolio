@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all ease 0.2s;
+}
+
+:root {
+  --main: #f3f4f6;
+  --lead: #fafafa;
+  --highlight: #15bec6;
+  --details: #33364d;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--highlight);
+  transition: ease-in;
+  border-radius: 5px;
+  box-shadow: 0 3px 0 var(--details);
+}
+
+.btn:active {
+  box-shadow: none;
+  margin-top: 6px;
+}
