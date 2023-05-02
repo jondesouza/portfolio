@@ -14,7 +14,7 @@ import { HashLink as Link } from 'react-router-hash-link'
 
 const Projects = () => {
     const [project, setProject] = useState(Easybank)
-    const [site, setSite] = useState("https://godsichor.forumeiros.com/")
+    const [site, setSite] = useState("https://jondesouza.github.io/easybank/")
     const [content, setContent] = useState("Landing page do Easybank, um banco digital fictício. Feito com HTML5, CSS3 e React.")
 
     const projectLeft = () => {
