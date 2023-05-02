@@ -20,15 +20,15 @@ const Projects = () => {
     const projectLeft = () => {
         if (project === Fylo) {
             setProject(Easybank)
-            setSite("https://godsichor.forumeiros.com/")
+            setSite("https://jondesouza.github.io/easybank/")
             setContent("Landing page do Easybank, um banco digital fictício. Feito com HTML5, CSS3 e React.")
         } else if (project === Easybank) {
             setProject(News)
-            setSite("https://tlcrpg.forumeiros.com/")
+            setSite("https://github.com/jondesouza/News-Homepage/")
             setContent("Landing page do News, um jornal digital fictício. Feito com HTML5, CSS3 e React.")
         } else {
             setProject(Fylo)
-            setSite("https://bloodolympus.forumeiros.com/")
+            setSite("https://jondesouza.github.io/fylo/")
             setContent("Landing page do Fylo, uma empresa fictícia de gerenciamento de dados. Feito com HTML5, CSS3 e React.")
         }
     }
@@ -36,15 +36,15 @@ const Projects = () => {
     const projectRight = () => {
         if (project === Fylo) {
             setProject(News)
-            setSite("https://tlcrpg.forumeiros.com/")
+            setSite("https://github.com/jondesouza/News-Homepage")
             setContent("Landing page do News, um jornal digital fictício. Feito com HTML5, CSS3 e React.")
         } else if (project === News) {
             setProject(Easybank)
-            setSite("https://godsichor.forumeiros.com/")
+            setSite("https://jondesouza.github.io/easybank/")
             setContent("Landing page do Easybank, um banco digital fictício. Feito com HTML5, CSS3 e React.")
         } else {
             setProject(Fylo)
-            setSite("https://bloodolympus.forumeiros.com/")
+            setSite("https://jondesouza.github.io/fylo/")
             setContent("Landing page do Fylo, uma empresa fictícia de gerenciamento de dados. Feito com HTML5, CSS3 e React.")
         }
     }
@@ -60,7 +60,7 @@ const Projects = () => {
                     <div className="content-port">{content}</div>
                     <div className="navigation">
                         <BrowserRouter>
-                            <Link to={site}><button class="check btn navigate">Acessar o site <FontAwesomeIcon icon={faArrowRight} className="arrow-icon" /></button></Link>
+                            <Link to={site} target="blank" rel="noopener noreferer" title="acessar o site"><button class="check btn navigate">Acessar o site <FontAwesomeIcon icon={faArrowRight} className="arrow-icon" /></button></Link>
                         </BrowserRouter>
                     </div>
                     <div className="qualities">
