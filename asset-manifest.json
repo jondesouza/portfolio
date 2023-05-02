@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.a9550dd3.css",
+    "main.js": "/portfolio/static/js/main.be217c7f.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/home-photo.png": "/portfolio/static/media/home-photo.541507c8d475becb2b01.png",
+    "static/media/news-mockup.png": "/portfolio/static/media/news-mockup.56f0b9276c01820f9bb4.png",
+    "static/media/fylo-mockup.png": "/portfolio/static/media/fylo-mockup.78843c2843b996645f2f.png",
+    "static/media/easybank-mockup.png": "/portfolio/static/media/easybank-mockup.928a841a37d8216fc68c.png",
+    "static/media/about-photo.png": "/portfolio/static/media/about-photo.5b0db2f36fd21135c57f.png",
+    "static/media/logo.png": "/portfolio/static/media/logo.52a88ea3af73e16ba228.png",
+    "static/media/corte-logo.png": "/portfolio/static/media/corte-logo.82311f283914fcd2b88a.png",
+    "index.html": "/portfolio/index.html",
+    "main.a9550dd3.css.map": "/portfolio/static/css/main.a9550dd3.css.map",
+    "main.be217c7f.js.map": "/portfolio/static/js/main.be217c7f.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a9550dd3.css",
+    "static/js/main.be217c7f.js"
+  ]
+}
